@@ -1,8 +1,10 @@
 body{
-	background-color:#800080;
+	background-color:#800080 !important;
+	font-family: 'Inconsolata', monospace;
 }
+/* code which controls area around the header */
 .menu-wid{
-	width:16% !important;
+	width:16.1% !important; /*DON'T MESS WITH*/
 	text-align:center;
 }
 #logo{
@@ -11,20 +13,63 @@ body{
 	float:left;
 }
 
-#login{
+#login a{
 	text-align:right;
 	color:#ffffff;
 	text-decoration: none;
 	width:50%;
-	float:right;
 	height:150px;
+	clear:both;
+	
 }
 #clear{
 	clear:left;
 }
+
+/* colour control for nav-bar */
+#home{
+ background-color:#d3d3d3 !important;
+border-radius: 12px 12px 0 0;
+}
+#science{
+background-color:#ffffff !important;	
+}
+#technology{
+background-color:#197319 !important;
+}
+#engineering{
+background-color:#FFD700 !important;
+}
+#art{
+background-color:#FF00FF !important;
+}
+#maths{
+background-color:#0000d3 !important;
+}
+#sci-txt{
+	color:#000000 !important;
+}
+/* controls colour for dropdown menu */
+.tech-sub{
+	background-color:#197319 !important;
+	color:#ffffff !important;
+}
+.eng-sub{
+	background-color:#FFD700 !important;
+	color:#ffffff !important;
+}
+.art-sub{
+	background-color:#FF00FF !important;
+	color:#ffffff !important;
+}
+.math-sub{
+	background-color:#0000d3 !important;
+	color:#ffffff !important;
+}
+/* code for the navbar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    
     font-family: Arial, Helvetica, sans-serif;
 	margin: 0 0 5px 0;
 }
@@ -41,6 +86,8 @@ body{
 .dropdown {
     float: left;
     overflow: hidden;
+	border-radius: 12px 12px 0 0;
+	margin:0 !important;
 }
 
 .dropdown .dropbtn {
@@ -54,10 +101,6 @@ body{
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-	width:100%;
-}
 
 .dropdown-content {
     display: none;
@@ -83,4 +126,9 @@ body{
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+footer{
+	height:300px;
+	margin-bottom:0;
+	position: absolute !important;
 }
